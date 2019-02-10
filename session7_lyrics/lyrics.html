@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="lyrics.css">
+
+
+    <title>FloDiggi Lyrics Search</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>The FloDiggi Lyrics Search</h1>
+
+        <form id="search-form">
+            <input type="text" id="search" value="" class="form-control" placeholder="Artist"/>
+            <input type="submit" id="submit" class="btn btn-primary" value="Enter Artist" />
+        </form>
+        <form id="search-form2" class="hidden">
+          <input type="text" id="search2" value="" class="form-control" placeholder="Song"/>
+          <input type="submit" id="submit2" class="btn btn-primary" value="Start Search" data-toggle="modal" data-target="#lyricsModal"/>
+      </form>
+        
+    </div>
+    
+    <div class="modal fade" id="lyricsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Lyrics</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick="window.location.reload()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="lyricscontent">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick="window.location.reload()">Close</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <script src="lyrics.js" charset="utf-8"></script>
+
+
+  </body>
+
+</html>

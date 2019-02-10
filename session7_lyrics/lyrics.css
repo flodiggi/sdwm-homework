@@ -1,0 +1,56 @@
+body {
+    padding: 20px;
+    background-color: #955796;
+
+}
+#search-form, .form-control {
+    margin: 20px 0px;
+
+}
+
+.form-control {
+    height: 60px;
+    font-size: 30px;
+  }
+
+
+.display {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.colored{
+  background:#42ebf4;
+  color: black
+}
+  
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-primary {
+  font-size: 30px;
+  margin-left: 40%;
+}
+
+
+
+
+
+
+
+.header {
+  font-size: x-large;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #337ab7;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
